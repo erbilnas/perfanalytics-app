@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const getMeasures = async (startDate, endDate) => {
     const options = {
-        "url": "http://localhost:8000/measure",
+        "url": "http://localhost:8000/measures",
         "method": "GET",
         "params": {
             "startDate": startDate,

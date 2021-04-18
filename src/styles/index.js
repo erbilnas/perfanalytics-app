@@ -3,21 +3,31 @@ import styled from 'styled-components'
 const DatetimePickerContainer = styled.div`
     position: absolute;
     left: 50%;
-    top: 5%;
+    top: 10%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    @media screen and (max-width: 528px) {
+        width: 90%;
+    }
+`
+const DatetimePickerLabel = styled.p`
+    margin: 0 0 10px 10px;
 `
 
 const ChartContainer = styled.div`
-    margin: 100px 0 0 25%;
-    max-width: 60%;
-    @media screen  and (max-width: 768px) {
-        margin: 100px 0 0 0;
-    }
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
 `
 
-const ChartGroup = styled.div`
-    display: flex;
+const ChartLabel = styled.span`
+    margin: 0 0 0 45%;
 `
 
-export { DatetimePickerContainer, ChartContainer, ChartGroup }
+const LoaderSpan = styled.span`
+    margin: 0 0 0 15px;
+`
+
+export { DatetimePickerContainer, DatetimePickerLabel, ChartContainer, ChartLabel, LoaderSpan }
