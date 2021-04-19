@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { DatePicker } from 'antd'
 import { DatetimePickerLabel } from '../../styles'
 
@@ -18,6 +19,14 @@ const DatetimePicker = (props) => {
             />
         </>
     )
+}
+
+DatetimePicker.propTypes = {
+    showTime: PropTypes.bool,
+    datetimeFormat: PropTypes.string,
+    handler: PropTypes.func,
+    disabledDate: PropTypes.func,
+    label: PropTypes.string,
 }
 
 export default DatetimePicker

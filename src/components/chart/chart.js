@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
 import { ChartLabel } from '../../styles/'
 
@@ -21,6 +22,11 @@ const Chart = (props) => {
             </LineChart>
         </>
     )
+}
+
+Chart.propTypes = {
+    data: PropTypes.object,
+    label: PropTypes.string,
 }
 
 export default Chart
