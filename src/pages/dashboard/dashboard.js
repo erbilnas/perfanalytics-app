@@ -54,7 +54,7 @@ const Dashboard = () => {
                                     label={Object.keys(_.groupBy(measures, 'url'))[index]}
                                     data={Object.values(_.groupBy(measures, 'url'))[index]}
                                     width={350}
-                                    height={300}
+                                    height={350}
                                     margin={chartMargin}
                                 />
                             )
