@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import { DatetimePickerContainer, ChartContainer, LoaderSpan } from '../../styles'
-import { Space } from 'antd'
+import { Space, Layout } from 'antd'
 import Chart from '../../components/chart'
 import DatetimePicker from '../../components/datetimepicker'
 import NoData from '../../components/nodata'
@@ -8,6 +8,8 @@ import Loader from '../../components/loader'
 import { getMeasures } from '../../services'
 import moment from 'moment'
 import _ from 'lodash'
+
+const { Header, Content, Footer } = Layout;
 
 const Dashboard = () => {
     const [date, setDate] = useState({ startDate: null, endDate: null })
@@ -88,9 +90,11 @@ const Dashboard = () => {
                 {showLoader}
             </DatetimePickerContainer>
             <ChartContainer>
-                <Space wrap>
-                    {showCharts}
-                </Space>
+                <Layout>
+                    <Space wrap>
+                        {showCharts}
+                    </Space>
+                </Layout>
             </ChartContainer>
         </>
     )
