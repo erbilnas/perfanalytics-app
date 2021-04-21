@@ -6,7 +6,7 @@ It's a simple dashboard application which shows performance related measures tha
 
 - Great and responsive design, thanks to Ant Design!
 - Component based architecture
-- It was dockerized using Docker and easy-to-use automated deployment using GitHub Actions and Heroku.
+- It was dockerized using Docker and easy-to-use automated deployment using GitHub Actions and Heroku
 
 
 ## Known Issues
