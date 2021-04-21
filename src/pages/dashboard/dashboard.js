@@ -9,8 +9,6 @@ import { getMeasures } from '../../services'
 import moment from 'moment'
 import _ from 'lodash'
 
-const { Header, Content, Footer } = Layout;
-
 const Dashboard = () => {
     const [date, setDate] = useState({ startDate: null, endDate: null })
     const [measures, setMeasures] = useState(null)
